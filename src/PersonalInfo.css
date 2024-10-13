@@ -1,0 +1,201 @@
+/* PersonalInfo.css */
+
+/* Container */
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Headers */
+.form-header {
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  color: #6c757d;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.main-title {
+  padding: 30px;
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* Form Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-field,
+.phone-input {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus,
+.phone-input:focus {
+  border-color: #007bff;
+}
+
+.input-disabled {
+  background: #f1f1f1;
+  color: #999;
+}
+
+.phone-group {
+  grid-column: span 2;
+}
+
+.phone-input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.flag-icon {
+  width: 20px;
+  height: 14px;
+  margin-right: 10px;
+}
+
+.input-small {
+  width: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+/* Terms and Conditions */
+.terms-label {
+  grid-column: span 2;
+  font-size: 14px;
+}
+
+.terms-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.terms-link:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-proceed {
+  background: #28a745;
+  color: #fff;
+}
+
+.btn-proceed:hover {
+  background: #218838;
+}
+
+/* PayPal Container */
+.paypal-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.paypal-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* VIN Details Section */
+.vin-details {
+  background: #f1f9ff;
+  padding: 20px;
+  border: 1px solid #cce5ff;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.vin-details h3 {
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.field label {
+  font-weight: bold;
+  color: #333;
+}
+
+.field span {
+  color: #555;
+}
+
+/* Error Message */
+.error-message {
+  color: #dc3545;
+  background: #f8d7da;
+  padding: 10px 20px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .phone-group {
+    grid-column: span 1;
+  }
+
+  .terms-label {
+    text-align: center;
+  }
+
+  .btn-proceed {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

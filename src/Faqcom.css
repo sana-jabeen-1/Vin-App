@@ -1,0 +1,118 @@
+/* General FAQ Section Styles */
+.faq-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .faq-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 40px;
+     /* Align the FAQ section title to the left */
+  }
+  
+  .faq-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    /* Align the subtitle to the left */
+  }
+  
+  /* Accordion Container */
+  .accordion-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left; /* Align container items to the left */
+  }
+  
+  /* Accordion Item */
+  .accordion-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Accordion Title */
+  .accordion-title {
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start; /* Ensure left alignment of text */
+    align-items: center;
+    padding: 10px 20px;
+    color: #467cbf;
+    transition: 0.3s ease;
+    text-align: left; /* Left-align text */
+  }
+  
+  .accordion-title:hover {
+    background: #eef7ff;
+  }
+  
+  .accordion-title.active {
+    color: #467cbf;
+  }
+  
+  /* Accordion Icon */
+  .accordion-icon {
+    margin-right: 10px; /* Add spacing to the right of the icon */
+    font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-icon.rotate {
+    transform: rotate(180deg);
+  }
+  
+  /* Accordion Content */
+  .accordion-content {
+    display: none;
+    padding: 0 20px 20px 20px;
+    line-height: 1.6;
+    color: #040404;
+    font-size: 18px;
+    text-align: left; /* Ensure left alignment of the content */
+  }
+  
+  .accordion-content.open {
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  /* Accordion Item Active State */
+  .accordion-title.active,
+  .accordion-content.open {
+    background: #eef7ff;
+    border-left: 4px solid #467cbf;
+  }
+  
+  /* Styling Links Inside the Accordion */
+  .accordion-content a {
+    color: #467cbf;
+    text-decoration: underline;
+  }
+  
+  .accordion-content a:hover {
+    color: #005bb5;
+    text-decoration: none;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .faq-title {
+      font-size: 28px;
+    }
+  
+    .accordion-title {
+      font-size: 16px;
+    }
+  }
+  

@@ -1,0 +1,98 @@
+.vin-validator {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-heading {
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .vin-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .validate-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .validate-button:hover {
+    background-color: #45a049;
+  }
+  
+  .validation-message {
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .vin-details {
+    margin-top: 20px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  h4 {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .field {
+    display: flex;
+    justify-content: flex-start; /* Align both the label and span to the start (left) */
+    gap: 10px; /* Reduce the space between label and span */
+    margin-bottom: 8px; /* Optional: Adjust margin for a tighter layout */
+  }
+  
+  label {
+    font-weight: bold;
+    color: #444;
+    min-width: 150px; /* Add a fixed width to the labels to keep them aligned */
+  }
+  
+  span {
+    color: #2a3eb1; /* You can customize the color */
+    text-align: left; /* Ensure text alignment is left */
+  }
+  @media (max-width: 768px) {
+    .vin-validator {
+      width: 95%;
+    }
+  
+    .field {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    span {
+      margin-top: 5px;
+    }
+  }
+  

@@ -1,0 +1,249 @@
+/* VinSearch.css */
+/* Text Styling */
+.vin-subtitle {
+  color: #467cbf; /* Theme color */
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.vin-title {
+  color: #222;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.1em;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .vin-title {
+    font-size: 35px;
+  }
+}
+/* Container Styling */
+.vin-search-container {
+width: 100%;
+background-color: #e3f7ff; /* Light blue background */
+padding: 50px 30px;
+justify-content: center;
+align-items: center;
+}
+
+.vin-search-content {
+background-color: #e3f7ff;
+max-width: 1200px;
+width: 100%;
+}
+
+/* Sticky Search Bar */
+
+
+.sticky-searchbar {
+position: -webkit-sticky; /* For Safari */
+position: sticky;
+top: 80px; /* Adjust the value to keep it below the header */
+
+}
+
+/* Search Bar Wrapper */
+.vin-input-wrapper {
+display: flex;
+justify-content: space-between;
+border: 1px solid rgba(0, 0, 0, 0.1);
+padding: 6px;
+border-radius: 25px;
+background-color: #ffffff;
+transition: border 0.3s ease;
+width: 800px; /* Adjusted width to reduce size */
+margin: 0 auto; /* Center the search bar */
+}
+
+.vin-input-wrapper:hover {
+border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+/* Input Field */
+.vin-input {
+flex: 1;
+padding: 12px;
+border: none;
+outline: none;
+font-size: 16px;
+color: #000;
+border-radius: 25px;
+margin-left: 8px;
+}
+
+/* Submit Button */
+.vin-submit-btn {
+padding: 14px 30px;
+border: none;
+outline: none;
+background-color: #467cbf; /* Theme color */
+color: #fff;
+border-radius: 25px;
+font-size: 16px;
+cursor: pointer;
+font-weight: 700;
+transition: background-color 0.3s ease;
+}
+
+.vin-submit-btn:hover {
+background-color: #f8b024; /* Darker shade */
+color: #467cbf;
+}
+
+
+/* "How It Works" Section Styling */
+.how-it-works .text-center h3 {
+  color: #467cbf; /* Theme color */
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.how-it-works .text-center h2 {
+  color: #222;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  line-height: 1.3em;
+}
+
+.steps-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.step-item {
+  width: 150px; /* Fixed width for each step */
+  margin: 0 20px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.step-item:hover {
+  transform: translateY(-10px); /* Slightly elevate the card on hover */
+}
+
+.step-image {
+  width: 100px; /* Larger icon size */
+  height: 100px;
+  margin: 0 auto 20px auto; /* Add spacing below the icon */
+  border-radius: 50%; /* Make the image circular */
+  background-color: #467cbf; /* Theme color for the circle */
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for emphasis */
+}
+
+.step-title {
+  font-size: 22px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #222; /* Dark color for visibility */
+}
+
+.step-description {
+  font-size: 16px;
+  color: #666;
+  margin: 0 auto;
+  max-width: 250px; /* Limit text width for readability */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .step-item {
+    width: 100%; /* Make each step take full width */
+    margin-bottom: 40px;
+  }
+
+  .how-it-works .text-center h2 {
+    font-size: 28px; /* Smaller font for mobile */
+  }
+
+  .how-it-works .text-center h3 {
+    font-size: 18px; /* Smaller subtitle for mobile */
+  }
+
+  .step-image {
+    width: 80px; /* Adjust icon size for smaller screens */
+    height: 80px;
+  }
+}
+/* Form Styling */
+
+  
+  .vin-form-container {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 50px; /* Adjust this value to align with your header */
+    z-index: 999;
+    /* Background color */
+    padding: 20px 0; /* Optional padding for spacing */
+    width: 100%; /* Full width to fit the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  }
+  
+  /* 
+}
+/* Main container for the card section */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Space between each card */
+  margin: 20px; /* Margin around the container */
+}
+
+/* Styling for each individual card */
+.card {
+  flex: 1 1 20%; /* Each card takes 30% of the row */
+  margin: 15px; /* Space around each card */
+  padding: 20px;
+  background-color: #ffffff; /* White background for cards */
+  border: 1px solid #ddd; /* Light border around each card */
+  border-radius: 12px; /* Rounded corners */
+  text-align: center; /* Centered text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Hover animation */
+}
+
+.card img {
+  width: 50px; /* Icon size */
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.2em; /* Font size for card titles */
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9em; /* Text size for descriptions */
+  color: #666;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive adjustments for medium screens */
+@media (max-width: 1024px) {
+  .card {
+      flex: 1 1 45%; /* Two cards per row */
+  }
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .card {
+      flex: 1 1 100%; /* Full-width cards for mobile */
+  }
+}
+
